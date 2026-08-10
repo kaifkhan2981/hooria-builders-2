@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>360° Virtual Tour & Video Showcase | Hooria Residency</title>
+  <meta name="description" content="Take an interactive 360° virtual walkthrough of Hooria Residency luxury apartments. Explore room layouts, interior finishes, and building amenities online.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1715560959493003');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1715560959493003&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="header">
+  <div style="display: flex; align-items: center; gap: 15px;">
+    <a href="index.html">
+      <img src="assets/images/logo.png" alt="Hooria Builders Logo" width="55" height="55">
+    </a>
+    <div>
+      <h2 class="text-gold" style="font-size: 1.6rem; font-weight: 800;">HOORIA <span>RESIDENCY</span></h2>
+      <div class="slogan" style="font-style: italic; color: #f4e5b1;">Interactive 360° Virtual Experience</div>
+    </div>
+  </div>
+  
+  <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  
+  <nav id="main-nav">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Our Projects</a>
+    <a href="virtual-tour.html" class="active">Virtual Tour</a>
+    <a href="index.html#plans">Payment Plan</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
+
+<!-- HERO HEADER -->
+<section style="background: linear-gradient(rgba(11,14,20,0.85), rgba(18,23,34,0.9)), url('assets/images/Front.jpg') center/cover; padding: 70px 20px; text-align: center;">
+  <h1 class="text-gold" style="font-size: 2.8rem; margin-bottom: 12px;">360° Interactive Virtual Tour</h1>
+  <p style="color: var(--text-secondary); max-width: 750px; margin: 0 auto; font-size: 1.1rem;">
+    Experience your future dream home from the comfort of your couch. Click through our room views and video walkthroughs below.
+  </p>
+</section>
+
+<!-- MAIN VIRTUAL VIEWER -->
+<section class="section">
+  <div style="background: var(--bg-card); border: 2px solid var(--gold-primary); border-radius: 16px; overflow: hidden; padding: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.5);">
+    
+    <!-- Active View Container -->
+    <div class="virtual-container">
+      <img id="virtual-view-img" src="assets/images/Front.jpg" alt="Virtual View" style="width: 100%; height: 100%; object-fit: cover; transition: opacity 0.4s ease;">
+      
+      <div style="position: absolute; bottom: 15px; left: 15px; right: 15px; background: rgba(18,23,34,0.88); backdrop-filter: blur(10px); padding: 10px 14px; border-radius: 10px; border: 1px solid var(--border-gold);">
+        <h3 id="virtual-view-title" style="color: var(--gold-primary); margin-bottom: 2px; font-size: 1.1rem;">Main Building Facade View</h3>
+        <p id="virtual-view-desc" style="color: var(--text-secondary); font-size: 0.82rem;">Exterior architecture with ambient lighting and glass balconies.</p>
+      </div>
+
+      <div style="position: absolute; top: 15px; right: 15px; background: var(--gold-primary); color: #121722; padding: 5px 12px; border-radius: 20px; font-weight: 700; font-size: 0.8rem;">
+        <i class="fa-solid fa-vr-cardboard"></i> 360° HD Mode
+      </div>
+    </div>
+
+    <!-- Room Selector Buttons -->
+    <div style="margin-top: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px;">
+      <button onclick="switchView('assets/images/Front.jpg', 'Exterior Front View', 'Modern high-rise architectural facade featuring sleek balconies.')" class="btn btn-outline" style="padding: 12px; font-size: 0.9rem; font-weight: 600;">
+        🏢 Exterior Facade
+      </button>
+      <button onclick="switchView('assets/images/Back.jpg', 'Courtyard & Parking Entrance', 'Basement parking ramp and landscaped rear courtyard.')" class="btn btn-outline" style="padding: 12px; font-size: 0.9rem; font-weight: 600;">
+        🚗 Courtyard & Parking
+      </button>
+      <button onclick="switchView('assets/images/bismillah-terrace.jpeg', 'Executive Drawing Room', 'Spacious drawing room layout with tile flooring.')" class="btn btn-outline" style="padding: 12px; font-size: 0.9rem; font-weight: 600;">
+        🛋️ Drawing Room Layout
+      </button>
+      <button onclick="switchView('assets/images/Front.jpg', 'Master Bedroom Suite', 'Master bedroom with attached luxury bath and balcony access.')" class="btn btn-outline" style="padding: 12px; font-size: 0.9rem; font-weight: 600;">
+        🛏️ Master Bedroom
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- SCHEDULE VIRTUAL CONSULTATION -->
+<section class="section dark" style="text-align: center;">
+  <h2>Want a Live Virtual Guided Tour?</h2>
+  <p style="color: var(--text-secondary); max-width: 650px; margin: 0 auto 25px auto;">
+    Schedule a 1-on-1 video call with our sales consultant who will walk you through floor plans and project updates live.
+  </p>
+
+  <a href="https://wa.me/923355902222?text=Assalam-o-Alaikum!%20I%20would%20like%20to%20schedule%20a%20Live%20Virtual%20Guided%20Tour." class="btn btn-whatsapp" target="_blank" style="font-size: 1.1rem; padding: 16px 32px;">
+    <i class="fa-brands fa-whatsapp"></i> Schedule Live Video Tour on WhatsApp
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer style="padding: 40px 20px; background: var(--bg-dark); text-align: center; border-top: 1px solid var(--border-gold);">
+  <p style="color: #aaa; font-size: 0.95em;">© Hooria Builders & Developers. All rights reserved.</p>
+</footer>
+
+<script>
+function switchView(imgSrc, title, desc) {
+  const img = document.getElementById('virtual-view-img');
+  img.style.opacity = 0;
+  setTimeout(() => {
+    img.src = imgSrc;
+    document.getElementById('virtual-view-title').innerText = title;
+    document.getElementById('virtual-view-desc').innerText = desc;
+    img.style.opacity = 1;
+  }, 250);
+}
+
+// Mobile nav toggle
+document.addEventListener("DOMContentLoaded", function() {
+  const hamburger = document.getElementById("hamburger");
+  const mainNav = document.getElementById("main-nav");
+  if (hamburger && mainNav) {
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("open");
+      mainNav.classList.toggle("open");
+    });
+    mainNav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("open");
+        mainNav.classList.remove("open");
+      });
+    });
+  }
+});
+</script>
+
+<!-- FLOATING MOBILE ACTION BAR -->
+<div class="mobile-action-bar">
+  <a href="tel:+923355902222" class="action-btn btn-call">
+    <i class="fa-solid fa-phone"></i> Call Now
+  </a>
+  <a href="https://wa.me/923355902222?text=Assalam-o-Alaikum!%20I%20want%20information%20about%20Hooria%20Residency." class="action-btn btn-wa" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+  </a>
+</div>
+
+</body>
+</html>

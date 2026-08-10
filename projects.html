@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Portfolio & Projects | Hooria Builders & Developers</title>
+  <meta name="description" content="Explore our ongoing and completed luxury residential developments in Karachi including Hooria Residency and the Bismillah Terrace series.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1715560959493003');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1715560959493003&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="header">
+  <div style="display: flex; align-items: center; gap: 15px;">
+    <a href="index.html">
+      <img src="assets/images/logo.png" alt="Hooria Builders Logo" width="55" height="55">
+    </a>
+    <div>
+      <h2 class="text-gold" style="font-size: 1.6rem; font-weight: 800;">HOORIA <span>RESIDENCY</span></h2>
+      <div class="slogan" style="font-style: italic; color: #f4e5b1;">Hooria Builders & Developers — Crafting Homes for Generations.</div>
+    </div>
+  </div>
+  
+  <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  
+  <nav id="main-nav">
+    <a href="index.html">Home</a>
+    <a href="projects.html" class="active">Our Projects</a>
+    <a href="virtual-tour.html">Virtual Tour</a>
+    <a href="index.html#plans">Payment Plan</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
+
+<!-- PAGE HEADER -->
+<section style="background: linear-gradient(rgba(11,14,20,0.85), rgba(18,23,34,0.9)), url('assets/images/Front.jpg') center/cover; padding: 70px 20px; text-align: center;">
+  <h1 class="text-gold" style="font-size: 2.8rem; margin-bottom: 12px;">Our Real Estate Portfolio</h1>
+  <p style="color: var(--text-secondary); max-width: 700px; margin: 0 auto; font-size: 1.1rem;">
+    Explore our flagship developments in prime Karachi neighborhoods, built with premium quality materials, 100% legal clearance, and modern architecture.
+  </p>
+</section>
+
+<!-- PORTFOLIO FILTER & GRID -->
+<section class="section">
+  <!-- Category Filter Buttons -->
+  <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 40px; flex-wrap: wrap;">
+    <button class="btn filter-btn active" onclick="filterProjects('all')" style="padding: 10px 24px; font-size: 0.95rem;">All Projects</button>
+    <button class="btn btn-outline filter-btn" onclick="filterProjects('ongoing')" style="padding: 10px 24px; font-size: 0.95rem;">Ongoing (Booking Open)</button>
+    <button class="btn btn-outline filter-btn" onclick="filterProjects('completed')" style="padding: 10px 24px; font-size: 0.95rem;">Completed Projects</button>
+  </div>
+
+  <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;" id="projects-grid">
+    
+    <!-- ONGOING: HOORIA RESIDENCY -->
+    <div class="card project-card ongoing" style="border: 2px solid var(--accent-green);">
+      <div style="position: relative;">
+        <span style="position: absolute; top: 12px; right: 12px; background: var(--accent-green); color: #fff; padding: 5px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 700;">📢 BOOKING OPEN</span>
+        <img src="assets/images/Front.jpg" alt="Hooria Residency" style="width: 100%; height: 230px; object-fit: cover; border-radius: 10px;">
+      </div>
+      <h3 style="margin: 18px 0 8px 0; color: var(--gold-primary); font-size: 1.4rem;">Hooria Residency</h3>
+      <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 15px;">Luxury 3, 4 & 5-room executive apartments in Nazimabad # 5-D with 3-year installment plans.</p>
+      
+      <div style="background: var(--bg-dark); padding: 12px; border-radius: 8px; font-size: 0.88rem; margin-bottom: 18px;">
+        <p style="margin-bottom: 4px;"><strong>Location:</strong> Plot #7, Nazimabad 5-D, Karachi</p>
+        <p style="margin-bottom: 4px;"><strong>Types:</strong> 3, 4 & 5 Room Units</p>
+        <p style="color: var(--accent-green); font-weight: 700;">Status: Construction in Progress</p>
+      </div>
+
+      <div style="display: flex; gap: 10px;">
+        <a href="https://wa.me/923355902222?text=I%20want%20to%20book%20a%20unit%20in%20Hooria%20Residency" class="btn btn-whatsapp" style="flex: 1; padding: 10px; font-size: 0.88rem;" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i> Book Now
+        </a>
+        <a href="index.html#plans" class="btn btn-outline" style="flex: 1; padding: 10px; font-size: 0.88rem;">
+          View Plan
+        </a>
+      </div>
+    </div>
+
+    <!-- COMPLETED: BISMILLAH TERRACE -->
+    <div class="card project-card completed">
+      <img src="assets/images/bismillah-terrace.jpeg" alt="Bismillah Terrace" style="width: 100%; height: 230px; object-fit: cover; border-radius: 10px;">
+      <h3 style="margin: 18px 0 8px 0; color: var(--gold-primary); font-size: 1.4rem;">Bismillah Terrace</h3>
+      <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 15px;">Modern family apartments with standby power backup and dedicated elevators.</p>
+      
+      <div style="background: var(--bg-dark); padding: 12px; border-radius: 8px; font-size: 0.88rem; margin-bottom: 18px;">
+        <p style="margin-bottom: 4px;"><strong>Location:</strong> Nazimabad, Karachi</p>
+        <p style="margin-bottom: 4px;"><strong>Units:</strong> 24 Executive Units</p>
+        <p style="color: var(--gold-light); font-weight: 700;">Status: Delivered & Occupied</p>
+      </div>
+
+      <a href="https://wa.me/923355902222?text=Inquiry%20for%20Bismillah%20Terrace" class="btn btn-outline" style="width: 100%; padding: 10px; font-size: 0.88rem;" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i> Inquire Resale
+      </a>
+    </div>
+
+    <!-- COMPLETED: BISMILLAH TERRACE 1 -->
+    <div class="card project-card completed">
+      <img src="assets/images/bismillah-terrace.jpeg" alt="Bismillah Terrace 1" style="width: 100%; height: 230px; object-fit: cover; border-radius: 10px;">
+      <h3 style="margin: 18px 0 8px 0; color: var(--gold-primary); font-size: 1.4rem;">Bismillah Terrace 1</h3>
+      <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 15px;">Prime residential development with spacious balcony views and title clearance.</p>
+      
+      <div style="background: var(--bg-dark); padding: 12px; border-radius: 8px; font-size: 0.88rem; margin-bottom: 18px;">
+        <p style="margin-bottom: 4px;"><strong>Location:</strong> Nazimabad, Karachi</p>
+        <p style="margin-bottom: 4px;"><strong>Units:</strong> 18 Luxury Units</p>
+        <p style="color: var(--gold-light); font-weight: 700;">Status: Delivered & Occupied</p>
+      </div>
+
+      <a href="https://wa.me/923355902222?text=Inquiry%20for%20Bismillah%20Terrace%201" class="btn btn-outline" style="width: 100%; padding: 10px; font-size: 0.88rem;" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i> Inquire Resale
+      </a>
+    </div>
+
+    <!-- COMPLETED: BISMILLAH TERRACE 2 -->
+    <div class="card project-card completed">
+      <img src="assets/images/bismillah-terrace.jpeg" alt="Bismillah Terrace 2" style="width: 100%; height: 230px; object-fit: cover; border-radius: 10px;">
+      <h3 style="margin: 18px 0 8px 0; color: var(--gold-primary); font-size: 1.4rem;">Bismillah Terrace 2</h3>
+      <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 15px;">High-standard apartment living built with earthquake-resistant structure.</p>
+      
+      <div style="background: var(--bg-dark); padding: 12px; border-radius: 8px; font-size: 0.88rem; margin-bottom: 18px;">
+        <p style="margin-bottom: 4px;"><strong>Location:</strong> North Nazimabad, Karachi</p>
+        <p style="margin-bottom: 4px;"><strong>Units:</strong> 20 Executive Units</p>
+        <p style="color: var(--gold-light); font-weight: 700;">Status: Delivered & Occupied</p>
+      </div>
+
+      <a href="https://wa.me/923355902222?text=Inquiry%20for%20Bismillah%20Terrace%202" class="btn btn-outline" style="width: 100%; padding: 10px; font-size: 0.88rem;" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i> Inquire Resale
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="padding: 40px 20px; background: var(--bg-dark); text-align: center; border-top: 1px solid var(--border-gold);">
+  <p style="color: #aaa; font-size: 0.95em;">© Hooria Builders & Developers. All rights reserved.</p>
+</footer>
+
+<script>
+function filterProjects(category) {
+  const cards = document.querySelectorAll('.project-card');
+  const buttons = document.querySelectorAll('.filter-btn');
+  
+  buttons.forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+  
+  cards.forEach(card => {
+    if (category === 'all' || card.classList.contains(category)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+// Mobile nav toggle
+document.addEventListener("DOMContentLoaded", function() {
+  const hamburger = document.getElementById("hamburger");
+  const mainNav = document.getElementById("main-nav");
+  if (hamburger && mainNav) {
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("open");
+      mainNav.classList.toggle("open");
+    });
+    mainNav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("open");
+        mainNav.classList.remove("open");
+      });
+    });
+  }
+});
+</script>
+
+<!-- FLOATING MOBILE ACTION BAR -->
+<div class="mobile-action-bar">
+  <a href="tel:+923355902222" class="action-btn btn-call">
+    <i class="fa-solid fa-phone"></i> Call Now
+  </a>
+  <a href="https://wa.me/923355902222?text=Assalam-o-Alaikum!%20I%20want%20information%20about%20Hooria%20Residency." class="action-btn btn-wa" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+  </a>
+</div>
+
+</body>
+</html>
